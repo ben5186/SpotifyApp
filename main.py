@@ -1,7 +1,7 @@
 # Ben Siri 10-2-22
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
-import cred
+import cred # personal client_ID and client_SECRET
 
 scope = "user-read-recently-played"
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=cred.client_ID,
