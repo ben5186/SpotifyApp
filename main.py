@@ -24,7 +24,7 @@ def getAuthTkn():
 
     out = ''
     for track in tracks:
-        out = out + ", " + track['name']
+        out = out + "\n" + track['name']
     return(out[1:])
 
 
@@ -35,14 +35,6 @@ def index():
     # for idx, item in enumerate(results['items']):
     #     track = item['track']
     #     out = out + (idx, track['artists'][0]['name'], " - ", track['name'])
-
-# @app.route('/')
-# def entry():
-#     sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=cred.client_ID,
-#                                                client_secret= cred.client_SECRET,
-#                                                 redirect_uri=cred.redirect_url,
-#                                                 scope=scope))
-#     return("entry")
 
 
 if __name__ == "__main__":
